@@ -247,7 +247,7 @@ class _StudentProfileScreenState extends State<StudentProfileScreen> {
           const StudentDetailsSection(),
           const TitleSection(
             name: 'University of Technology Sarawak',
-            location: 'Sibu, Sarawak, Malaysia',
+            location: 'UTS, Sibu, Sarawak',
             starCount: 41,
           ),
           const LandscapeImageSection(
@@ -284,11 +284,17 @@ class _StudentProfileScreenState extends State<StudentProfileScreen> {
             padding: const EdgeInsets.all(16),
             children: [
               const TitleSection(
-                name: 'CALVIN LEONG YU WEI',
+                name: 'University Technology Sarawak',
                 location: 'UTS, Sibu, Sarawak',
                 starCount: 41,
               ),
               const TextSection(),
+
+              const LandscapeImageSection(
+                imagePath: 'assets/images/herrypotter.png',
+              ),
+              const SizedBox(height: 16),
+
               PickerSection(
                 selectedDate: _formatDate(_selectedDate),
                 selectedHouse: _selectedHouse,
